@@ -51,7 +51,7 @@ class ClusterAnalyzer:
         return dataset.groupby('Cluster').mean()
 
 # Veri Yükleme
-dataset = pd.read_csv('drug200.csv')
+dataset = pd.read_csv('data\\drug200.csv')
 
 # Adım 1: Veriyi İşleme
 preprocessor = DataPreprocessor(dataset)

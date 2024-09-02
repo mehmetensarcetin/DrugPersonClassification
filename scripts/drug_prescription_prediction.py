@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.tree import DecisionTreeClassifier
@@ -40,7 +41,7 @@ class DrugPredictionModel:
 
 def main():
     # Verinin yüklenmesi
-    df = pd.read_csv('drug200.csv')
+    df = pd.read_csv('data\\drug200.csv')
 
     # Veri ön işleme
     preprocessor = DataPreprocessor(df)
